@@ -3,6 +3,7 @@
 #只忽略当前目录下的Library文件和目录
 /VolumeEnd/Library
 /VolumeEnd/Logs
+/VolumeEnd/Temp
 *.sln
 *.vscode
 *.vs
