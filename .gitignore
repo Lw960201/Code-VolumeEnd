@@ -1,0 +1,8 @@
+#忽略.idea文件夹及文件夹下文件
+.idea
+#只忽略当前目录下的Library文件和目录
+/VolumeEnd/Library
+/VolumeEnd/Logs
+*.sln
+*.vscode
+*.vs
