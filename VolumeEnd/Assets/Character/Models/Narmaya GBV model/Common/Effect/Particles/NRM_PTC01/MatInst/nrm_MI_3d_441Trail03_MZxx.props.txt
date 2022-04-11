@@ -1,0 +1,56 @@
+ScalarParameterValues[2] =
+{
+    ScalarParameterValues[0] =
+    {
+        ParameterName = None
+        ParameterValue = 0.025
+        ParameterInfo =
+        {
+            Name = Threshold ( 0 to 1 )
+        }
+    }
+    ScalarParameterValues[1] =
+    {
+        ParameterName = None
+        ParameterValue = 0
+        ParameterInfo =
+        {
+            Name = RefractionDepthBias
+        }
+    }
+}
+TextureParameterValues[1] =
+{
+    TextureParameterValues[0] =
+    {
+        ParameterName = None
+        ParameterValue = Texture2D'/RED/Content/Chara/NRM/Common/Effect/Particles/NRM_PTC01/Tex/nrm_440_AnimTrail2_Curve01.nrm_440_AnimTrail2_Curve01'
+        ParameterInfo = { Name=base_tex }
+    }
+}
+VectorParameterValues[1] =
+{
+    VectorParameterValues[0] =
+    {
+        ParameterName = None
+        ParameterValue = { R=4, G=1, B=2, A=0 }
+        ParameterInfo = { Name=BloomColor }
+    }
+}
+Parent = Material3'/RED/Content/Shared/Effect/PTC_Mat/M_3d.M_3d'
+BasePropertyOverrides =
+{
+    bOverride_BlendMode = true
+    BlendMode = BLEND_Masked (1)
+    bOverride_TwoSided = false
+    TwoSided = true
+    bOverride_OpacityMaskClipValue = false
+    OpacityMaskClipValue = 0.3333
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None

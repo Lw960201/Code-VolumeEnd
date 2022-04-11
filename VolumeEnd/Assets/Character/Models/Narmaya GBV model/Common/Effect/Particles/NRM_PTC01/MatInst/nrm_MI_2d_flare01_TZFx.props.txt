@@ -1,0 +1,48 @@
+ScalarParameterValues[2] =
+{
+    ScalarParameterValues[0] =
+    {
+        ParameterName = None
+        ParameterValue = -12
+        ParameterInfo =
+        {
+            Name = ZLineNearestOffset
+        }
+    }
+    ScalarParameterValues[1] =
+    {
+        ParameterName = None
+        ParameterValue = 0
+        ParameterInfo =
+        {
+            Name = RefractionDepthBias
+        }
+    }
+}
+TextureParameterValues[1] =
+{
+    TextureParameterValues[0] =
+    {
+        ParameterName = None
+        ParameterValue = Texture2D'/RED/Content/Chara/NRM/Common/Effect/Particles/NRM_PTC04/Tex/nrm_flare01.nrm_flare01'
+        ParameterInfo = { Name=base_tex }
+    }
+}
+VectorParameterValues[0] = {}
+Parent = Material3'/RED/Content/Shared/Effect/PTC_Mat/NoDOF/M_2d_NoDOF.M_2d_NoDOF'
+BasePropertyOverrides =
+{
+    bOverride_BlendMode = false
+    BlendMode = BLEND_Translucent (2)
+    bOverride_TwoSided = false
+    TwoSided = false
+    bOverride_OpacityMaskClipValue = false
+    OpacityMaskClipValue = 0.3333
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None

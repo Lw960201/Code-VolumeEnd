@@ -1,0 +1,21 @@
+TwoSided = true
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[6] =
+{
+    ReferencedTextures[0] = Texture2D'/RED/Content/Chara/NRM/Common/Effect/Particles/NRM_PTC04/Tex/nrm_butterfly01.nrm_butterfly01'
+    ReferencedTextures[1] = Texture2D'/RED/Content/Chara/NRM/Common/Effect/Particles/NRM_PTC04/Tex/nrm_butterfly01_Mask01.nrm_butterfly01_Mask01'
+    ReferencedTextures[2] = Texture2D'/RED/Content/Chara/NRM/Common/Effect/Particles/NRM_PTC04/Tex/nrm_butterfly01_Mask02.nrm_butterfly01_Mask02'
+    ReferencedTextures[3] = Texture2D'/RED/Content/Chara/NRM/Common/Effect/Particles/NRM_PTC04/Tex/nrm_butterfly_anim.nrm_butterfly_anim'
+    ReferencedTextures[4] = Texture2D'/RED/Content/Chara/NRM/Common/Effect/Particles/NRM_PTC04/Tex/nrm_butterfly_anim_Normals.nrm_butterfly_anim_Normals'
+    ReferencedTextures[5] = Texture2D'/RED/Content/Shared/Effect/PTC_Tex/M_3d.M_3d'
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None

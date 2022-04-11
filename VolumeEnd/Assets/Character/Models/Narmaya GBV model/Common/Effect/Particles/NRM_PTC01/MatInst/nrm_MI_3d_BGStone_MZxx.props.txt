@@ -1,0 +1,53 @@
+ScalarParameterValues[1] =
+{
+    ScalarParameterValues[0] =
+    {
+        ParameterName = None
+        ParameterValue = 0
+        ParameterInfo =
+        {
+            Name = RefractionDepthBias
+        }
+    }
+}
+TextureParameterValues[1] =
+{
+    TextureParameterValues[0] =
+    {
+        ParameterName = None
+        ParameterValue = Texture2D'/RED/Content/Shared/Effect/PTC_Tex/PB_StoneA.PB_StoneA'
+        ParameterInfo = { Name=Texture }
+    }
+}
+VectorParameterValues[1] =
+{
+    VectorParameterValues[0] =
+    {
+        ParameterName = None
+        ParameterValue =
+        {
+            R = 0.019382
+            G = 0.06301
+            B = 0.090842
+            A = 1
+        }
+        ParameterInfo = { Name=DepthColor }
+    }
+}
+Parent = Material3'/RED/Content/Shared/Effect/PTC_Mat/SPMat/M_3d_Mountain.M_3d_Mountain'
+BasePropertyOverrides =
+{
+    bOverride_BlendMode = false
+    BlendMode = BLEND_Masked (1)
+    bOverride_TwoSided = false
+    TwoSided = false
+    bOverride_OpacityMaskClipValue = false
+    OpacityMaskClipValue = 0.3333
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None

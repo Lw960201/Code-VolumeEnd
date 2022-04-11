@@ -1,0 +1,45 @@
+ScalarParameterValues[1] =
+{
+    ScalarParameterValues[0] =
+    {
+        ParameterName = None
+        ParameterValue = 0
+        ParameterInfo =
+        {
+            Name = RefractionDepthBias
+        }
+    }
+}
+TextureParameterValues[2] =
+{
+    TextureParameterValues[0] =
+    {
+        ParameterName = None
+        ParameterValue = Texture2D'/RED/Content/Shared/Effect/PTC_Tex/animray01.animray01'
+        ParameterInfo = { Name=alpha_tex }
+    }
+    TextureParameterValues[1] =
+    {
+        ParameterName = None
+        ParameterValue = Texture2D'/RED/Content/Shared/Effect/PTC_Tex/whitecolor.whitecolor'
+        ParameterInfo = { Name=base_tex }
+    }
+}
+VectorParameterValues[0] = {}
+Parent = Material3'/RED/Content/Shared/Effect/PTC_Mat/M_2d_alpha.M_2d_alpha'
+BasePropertyOverrides =
+{
+    bOverride_BlendMode = true
+    BlendMode = BLEND_Translucent (2)
+    bOverride_TwoSided = false
+    TwoSided = false
+    bOverride_OpacityMaskClipValue = false
+    OpacityMaskClipValue = 0.3333
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None

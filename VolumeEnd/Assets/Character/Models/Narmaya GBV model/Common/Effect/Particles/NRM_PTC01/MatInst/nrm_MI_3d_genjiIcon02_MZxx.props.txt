@@ -1,0 +1,71 @@
+ScalarParameterValues[1] =
+{
+    ScalarParameterValues[0] =
+    {
+        ParameterName = None
+        ParameterValue = 0
+        ParameterInfo =
+        {
+            Name = RefractionDepthBias
+        }
+    }
+}
+TextureParameterValues[2] =
+{
+    TextureParameterValues[0] =
+    {
+        ParameterName = None
+        ParameterValue = Texture2D'/RED/Content/Chara/NRM/Common/Effect/Particles/NRM_PTC04/Tex/nrm_butterfly01_Mask02.nrm_butterfly01_Mask02'
+        ParameterInfo = { Name=alpha_tex }
+    }
+    TextureParameterValues[1] =
+    {
+        ParameterName = None
+        ParameterValue = Texture2D'/RED/Content/Chara/NRM/Common/Effect/Particles/NRM_PTC04/Tex/nrm_butterfly01_Mask01.nrm_butterfly01_Mask01'
+        ParameterInfo = { Name=base_tex }
+    }
+}
+VectorParameterValues[3] =
+{
+    VectorParameterValues[0] =
+    {
+        ParameterName = None
+        ParameterValue =
+        {
+            R = 0
+            G = 0.25
+            B = 0.5
+            A = 0
+        }
+        ParameterInfo = { Name=Color1 }
+    }
+    VectorParameterValues[1] =
+    {
+        ParameterName = None
+        ParameterValue = { R=1, G=0.25, B=1, A=0 }
+        ParameterInfo = { Name=Color2 }
+    }
+    VectorParameterValues[2] =
+    {
+        ParameterName = None
+        ParameterValue = { R=1, G=1, B=1, A=0 }
+        ParameterInfo = { Name=Color3 }
+    }
+}
+Parent = Material3'/RED/Content/Shared/Effect/PTC_Mat/M_3d_alpha.M_3d_alpha'
+BasePropertyOverrides =
+{
+    bOverride_BlendMode = true
+    BlendMode = BLEND_Masked (1)
+    bOverride_TwoSided = false
+    TwoSided = true
+    bOverride_OpacityMaskClipValue = false
+    OpacityMaskClipValue = 0.3333
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
