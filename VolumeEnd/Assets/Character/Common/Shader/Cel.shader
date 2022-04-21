@@ -58,34 +58,40 @@
 
             #include "UnityCG.cginc"
 
-            struct appdata
+            struct a2v
             {
                 float4 vertex : POSITION;
                 float2 uv : TEXCOORD0;
+                float3 normal : NORMAL;
             };
 
             struct v2f
             {
                 float2 uv : TEXCOORD0;
                 float4 vertex : SV_POSITION;
+                float3 nDirWS : TEXCOORD1;
             };
 
             sampler2D _MainTex;
             float4 _MainTex_ST;
 
-            v2f vert (appdata v)
+            v2f vert (a2v v)
             {
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
+                o.nDirWS = UnityObjectToWorldNormal(v.normal);
                 return o;
             }
 
             fixed4 frag (v2f i) : SV_Target
             {
+                fixed3 lDirWS = normalize(_WorldSpaceLightPos0.xyz);
+                float NL = dot(i.nDirWS,lDirWS);
+                float3 Diffuse = max(0,NL);
                 fixed4 col = tex2D(_MainTex, i.uv);
 
-                return col;
+                return fixed4(Diffuse,1);
             }
             ENDCG
         }
