@@ -148,7 +148,7 @@ namespace CodeStage.AdvancedFPSCounter
 
 					fpsCounter.UpdateValue();
 					memoryCounter.UpdateValue();
-					deviceInfoCounter.UpdateValue();
+					//deviceInfoCounter.UpdateValue();
 
 					UpdateTexts();
 				}
@@ -819,6 +819,7 @@ namespace CodeStage.AdvancedFPSCounter
 				anyContentPresent = true;
 			}
 
+			memoryCounter.Enabled = false;
 			if (memoryCounter.Enabled)
 			{
 				DrawableLabel label = labels[(int)memoryCounter.Anchor];
@@ -833,6 +834,7 @@ namespace CodeStage.AdvancedFPSCounter
 				anyContentPresent = true;
 			}
 
+			deviceInfoCounter.Enabled = false;
 			if (deviceInfoCounter.Enabled)
 			{
 				DrawableLabel label = labels[(int)deviceInfoCounter.Anchor];
