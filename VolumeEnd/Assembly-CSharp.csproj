@@ -64,17 +64,36 @@
      <None Include="Assets\AdvancedFPSCounter\Changelog.txt" />
      <None Include="Assets\Character\Common\Shader\GearXStage.shader" />
      <None Include="Assets\AdvancedFPSCounter\API.txt" />
+     <None Include="Assets\Character\Common\Shader\Cel_Transparent.shader" />
      <None Include="Assets\Scene\ReadMe.txt" />
      <None Include="Assets\Character\ReadMe.txt" />
      <None Include="Assets\Character\Common\Shader\Cel.shader" />
+ <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+ <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+ <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Editor">
+ <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Runtime">
+ <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+ <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Editor">
+ <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
@@ -85,8 +104,17 @@
  <Reference Include="Unity.Rider.Editor">
  <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+ <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
  <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ShaderGraph.Editor">
+ <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+ <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
@@ -96,33 +124,6 @@
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
- <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Universal.Shaders">
- <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Core.Editor">
- <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Core.Runtime">
- <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Universal.Runtime">
- <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Universal.Editor">
- <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
- <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ShaderGraph.Editor">
- <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
- <HintPath>D:/Dev/Unity/Code-VolumeEnd/VolumeEnd/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity 2019.4.33f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
