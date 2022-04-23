@@ -1,5 +1,20 @@
 {
   "dependencies": {
+    "com.autodesk.fbx": {
+      "version": "4.0.1",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.igg.csv2mesh": {
+      "version": "file:CSV2Mesh",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.formats.fbx": "4.0.1"
+      }
+    },
     "com.unity.collab-proxy": {
       "version": "1.14.1",
       "depth": 0,
@@ -12,6 +27,16 @@
       "depth": 1,
       "source": "registry",
       "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.formats.fbx": {
+      "version": "4.0.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.timeline": "1.0.0",
+        "com.autodesk.fbx": "4.0.1"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.rider": {
