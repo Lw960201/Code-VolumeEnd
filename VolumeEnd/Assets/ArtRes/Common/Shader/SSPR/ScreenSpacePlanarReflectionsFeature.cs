@@ -112,7 +112,7 @@ public class ScreenSpacePlanarReflectionsFeature : ScriptableRendererFeature
         public bool Setup(ScriptableRenderer renderer, ref RenderingData renderingData)
         {
             m_CameraColorTarget = renderer.cameraColorTarget;
-            m_CameraDepthTarget = renderer.cameraDepth;
+            m_CameraDepthTarget = renderer.cameraDepthTarget;
 
             // if it matches with Camera Target then it should be equal to whatever CameraColorTarget is
             if (m_CameraDepthTarget.Equals(RenderTargetHandle.CameraTarget.Identifier()))
@@ -326,7 +326,7 @@ public class ScreenSpacePlanarReflectionsFeature : ScriptableRendererFeature
         public void SetTargets(ScriptableRenderer renderer)
         {
             m_CameraColorTarget = renderer.cameraColorTarget;
-            m_CameraDepthTarget = renderer.cameraDepth;
+            m_CameraDepthTarget = renderer.cameraDepthTarget;
 
             // if it matches with Camera Target then it should be equal to whatever CameraColorTarget is
             if(m_CameraDepthTarget.Equals(RenderTargetHandle.CameraTarget.Identifier()))
@@ -717,7 +717,7 @@ public class ScreenSpacePlanarReflectionsFeature : ScriptableRendererFeature
     {
         // do we has a depth texture or support using the camera depth
         return SystemInfo.supportsComputeShaders // we need compute
-            && (renderingData.cameraData.requiresDepthTexture || renderer.cameraDepth != RenderTargetHandle.CameraTarget.Identifier()) // we need a depth texture to read
+            && (renderingData.cameraData.requiresDepthTexture || renderer.cameraDepthTarget != RenderTargetHandle.CameraTarget.Identifier()) // we need a depth texture to read
             && SystemInfo.graphicsDeviceType != GraphicsDeviceType.OpenGLES2 // we dont support open gles 2
             && SystemInfo.graphicsDeviceType != GraphicsDeviceType.OpenGLES3; // we dont support open gles 3
     }
