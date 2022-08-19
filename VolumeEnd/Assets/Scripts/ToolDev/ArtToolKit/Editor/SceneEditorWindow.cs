@@ -80,7 +80,7 @@ namespace ArtToolKit
 			probeSetScenes.Clear();
 			selectionOBjs.Clear();
 			FindReferencesNoSceneTool.Clear();
-			SceneView.duringSceneGui -= AirWallGenerator.DrawAirWall;
+			// SceneView.duringSceneGui -= AirWallGenerator.DrawAirWall;
 		}
 
 		public void Init()
@@ -138,10 +138,10 @@ namespace ArtToolKit
 					break; 
 			}
 
-			if (tabType != TabType.AirWallGenerator)
-			{
-				SceneView.duringSceneGui -= AirWallGenerator.DrawAirWall;
-			}
+			// if (tabType != TabType.AirWallGenerator)
+			// {
+			// 	SceneView.duringSceneGui -= AirWallGenerator.DrawAirWall;
+			// }
 		}
 
 		private void DrawAirWallGeneratorGUI()
