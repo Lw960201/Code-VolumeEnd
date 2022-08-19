@@ -52,7 +52,7 @@ namespace ArtToolKit
 		{
 			sceneWindow = new SceneEditorWindow();
 			sceneWindow.Init();
-			
+
 			vfxWindow = new VfxEditorWindow();
 			vfxWindow.Init();
 			

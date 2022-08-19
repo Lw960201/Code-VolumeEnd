@@ -16,7 +16,7 @@
 		public readonly static string NoSameScaleCheck = "http://192.168.5.25:8090/x/0IE8B";
 		public readonly static string PrefabPeplace = "http://192.168.5.25:8090/x/xIE8B";
 		public readonly static string FindRefNoInScene = "http://192.168.5.25:8090/x/uoA8B";
-		public readonly static string FoliageDataCheck = "http://192.168.5.25:8090/x/XABmB";
+		public readonly static string AirWallGenerator = "";
 		public readonly static string ProbeSet = "http://192.168.5.25:8090/x/xABmB";
 
 		//特效

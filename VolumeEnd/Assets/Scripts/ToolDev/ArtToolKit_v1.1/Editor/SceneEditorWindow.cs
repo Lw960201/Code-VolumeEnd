@@ -21,7 +21,7 @@ namespace ArtToolKit
 			NoSameScaleCheck,
 			PrefabPeplace,
 			FindRefNoInScene,
-			FoliageDataCheck,
+			AirWallGenerator,
 			ProbeSet,
 		}
 
@@ -52,6 +52,7 @@ namespace ArtToolKit
 			public static bool isCheckDesignScene = true;
 			public static bool isCheckCombineScene = true;
 			public static bool isCheckAbScene = true;
+			public static bool isEditAirWall = false;
 			public static int listCount = 0;
 			public static List<Object> objList = new List<Object>();
 			public static bool folder = true;
@@ -79,6 +80,7 @@ namespace ArtToolKit
 			probeSetScenes.Clear();
 			selectionOBjs.Clear();
 			FindReferencesNoSceneTool.Clear();
+			SceneView.duringSceneGui -= AirWallGenerator.DrawAirWall;
 		}
 
 		public void Init()
@@ -90,7 +92,7 @@ namespace ArtToolKit
 				new GUIContent("非等比缩放检查"),
 				new GUIContent("替换Prefab"),
 				new GUIContent("寻找当前场景未引用对象"),
-				new GUIContent("FoliageData检查"),
+				new GUIContent("空气墙生成器"),
 				new GUIContent("Probe设置"),
 			};
 
@@ -128,14 +130,70 @@ namespace ArtToolKit
 				case TabType.FindRefNoInScene:
 					DrawFindRefNoInSceneGUI();
 					break;
-				// case TabType.FoliageDataCheck:
-				// 	DrawFoliageDataCheckGUI();
-					// break;
+				case TabType.AirWallGenerator:
+					DrawAirWallGeneratorGUI();
+					break;
 				case TabType.ProbeSet:
 					DrawProbeSetGUI();
-					break;
+					break; 
+			}
+
+			if (tabType != TabType.AirWallGenerator)
+			{
+				SceneView.duringSceneGui -= AirWallGenerator.DrawAirWall;
 			}
 		}
+
+		private void DrawAirWallGeneratorGUI()
+		{
+			ArtEditorUtil.DocButton(DocURL.AirWallGenerator);
+			// Parm.isEditAirWall = GUILayout.b(Parm.isEditAirWall, "当前场景生成空气墙节点", new GUIStyle("button"));
+			// if (Parm.isEditAirWall)
+			// {
+			// 	SceneView.duringSceneGui -= AirWallGenerator.DrawAirWall;
+			// 	SceneView.duringSceneGui += AirWallGenerator.DrawAirWall;
+			// }
+			// else
+			// {
+			// 	SceneView.duringSceneGui -= AirWallGenerator.DrawAirWall;
+			// }
+
+			if (GUILayout.Button("当前场景生成空气墙节点"))
+			{
+				GenerateAirWallNodeInCurScene();
+			}
+
+			// var airWall = AirWallGenerator.airWall;
+			// using (var z = new EditorGUILayout.VerticalScope("Button"))
+			// {
+			// 	scrollPos = EditorGUILayout.BeginScrollView(scrollPos, false, false,
+			// 		GUILayout.Height(400));
+			// 	for (int i = 0; i < airWall.points.Count; i++)
+			// 	{
+			// 		EditorGUI.BeginChangeCheck();
+			// 		var pos = EditorGUILayout.Vector3Field("位置", airWall.points[i]);
+			// 		if (EditorGUI.EndChangeCheck())
+			// 		{
+			// 			airWall.points[i] = pos;
+			// 			AssetDatabase.Refresh();
+			// 		}
+			// 	}
+			// 	
+			// 	EditorGUILayout.EndScrollView();
+			// }
+		}
+
+		private GameObject go;
+		private void GenerateAirWallNodeInCurScene()
+		{
+			if (!GameObject.Find("AirWall"))
+			{
+				go = new GameObject("AirWall");
+				go.AddComponent<AirWall>();
+				Selection.activeObject = go;
+			}
+		}
+
 
 		private void DrawProbeSetGUI()
 		{
